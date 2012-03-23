@@ -1,7 +1,10 @@
 {
   "/":            "index",
-  "/guide":       "guide",
-  "/demo":        "demo",
+  "/guides":       "guides",
+    "/install":       "install",
+    "/use":           "use",
+    "/learn":         "learn",
+    "/troubleshoot":  "troubleshoot",
   "/sites":       "sites",
   "/*":           "index"
 }

@@ -4,19 +4,20 @@
     #title FiveTastic
     %link{ type: "text/sass", href: "/sass/reset.sass" }
     %link{ type: "text/sass", href: "/sass/app.sass" }
-    %link{ type: "text/sass", href: "/sass/theme_red.sass", id: "theme" }
   #body
     #container
       %header          
         %h1 
-          %a{ href: "/" } FiveTastic
+          %a{ href: "/" } 
+            5
+            %span Tastic
           
         %nav
           %a.right{ href: "https://github.com/makevoid/fivetastic/zipball/master" } Download
-          %a{ href: "/guide" } Guide
+          %a{ href: "/guides" } Guide
           %a{ href: "http://demo.fivetastic.org" } Demo
           %a{ href: "/sites" } Sites
-      .clear
+        .clear
           
       #content
         != yield

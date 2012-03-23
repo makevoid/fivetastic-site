@@ -1,47 +1,59 @@
-%h2 Hello World!
+%section.home
 
-%p FiveTastic is a mini-framework to develop website/apps that run entirely on client side using the following libraries:
+  %h2 FiveTastic
+  
+  %article.libraries
+    %p FiveTastic is a mini-framework to develop website/apps that run entirely on client side using the following libraries:
 
-%ul
-  %li HAML
-  %li SASS
-  %li Coffeescript, JQuery/Zepto
+    %ul
+      %li 
+        %a{ href: "http://haml-lang.com" }
+          %img{ src: "/images/icons/haml.gif" }
+      %li 
+        %a{ href: "http://sass-lang.com" }
+          %img{ src: "/images/icons/sass.gif" }
+      %li 
+        %a{ href: "http://jquery.com" }
+          %img{ src: "/images/icons/jquery.png" }
+      %li 
+        %a{ href: "http://sass-lang.org" }
+          %img{ src: "/images/icons/coffeescript.png" }
+      
+      
+  %article.features
+  
+    %h3 Main features:
 
-%h3 Main features:
-
-
-%ul
-  %li 
-    loads HAML and SASS files asynchronously 
-    %span (ajax)
-  %li 
-    has layout file 
-    %span (reuse html)
-  %li 
-    handles history changes 
-    %span (pushState/onpopstate)
-  %li 
-    integrates editor to develop directly into the browser
-    %span (CodeMirror editor, the files are saved into the browser's localStorage)
-  %li 
-    host it everywhere! 
-    %span (it's only html and js)
-  %li 
-    Starts with HTML5 reset, SASS mixins and Coffeescript basic animations
+    %ul
+      %li 
+        Loads HAML and SASS files asynchronously 
+        %span (ajax)
+      %li 
+        Has a layout file 
+        %span (reuse html)
+      %li 
+        Handles history changes 
+        %span (pushState/onpopstate)
+      %li 
+        Integrates editor to develop directly into the browser
+        %span (CodeMirror editor, the files are saved into the browser's localStorage)
+      %li 
+        Host it everywhere! 
+        %span (it's only html and js)
+      %li 
+        Starts with good defaults
+        %span (HTML5 reset, SASS mixins and Coffeescript basic animations)
     
-  %li it's simple, it's fast, it's powerful, so...
+      %li it's simple, it's fast, it's powerful!
 
-.box 
-  ...profit!
-
-
-%p 
-  This file is the home page, located here: 
-  %span /haml/index.haml
-%p
-  And here's the template/layout: 
-  %span /haml/layout.haml
-
-%p 
-  more infos: 
-  %a{ href: "https://github.com/makevoid/fivetastic" } github.com/makevoid/fivetastic
+    .images
+      %img{ src: "/images/directory.png" }  
+      %img{ src: "/images/screens/index_haml.png" }
+      %img{ src: "/images/screens/layout_haml.png" }
+      %img{ src: "/images/screens/routes_json.png" }
+      %img{ src: "/images/screens/app_sass.png" }
+      
+  %article.code
+    %h3 Code:
+    %p 
+      %a{ href: "https://github.com/makevoid/fivetastic" } github.com/makevoid/fivetastic

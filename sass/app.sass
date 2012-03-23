@@ -5,12 +5,21 @@
 
 // this is your main css file, loaded after reset.sass feel free to delete everything and write your own styles
 
+
+!main_color = #DD2200
+!main_color2 = #FF0000
 !text_color2 = #FFF
 
 +rounded
-  border-radius: 10px
   -webkit-border-radius: 10px
   -moz-border-radius: 10px
+  border-radius: 0 0 10px 10px
+
++simplest_button
+  position: relative
+  left: 1px
+  top: 1px
+  cursor: pointer
 
 body
   background: #eaeaea
@@ -24,16 +33,18 @@ body
   +gradient(#FFF, #888)
   
 #container
-  margin: 20px auto
+  margin: 0 auto
   width: 92%
   
 nav
-  margin: 8px 0 30px
+  margin: 0 0 0 120px
   a
     margin: 0 10px 0 0
     color: !text_color2
-    padding: 4px 10px
+    font-size: 1.2em
+    padding: 10px 14px 8px
     +rounded
+    float: left
   a:hover  
     color: #ddd
     
@@ -42,14 +53,49 @@ ul
   li
    margin: 3px 0 5px
    font-weight: bold
-  
+
+h1
+  font-family: Impact
+  font-size: 2.2em
+  text-align: center
+  letter-spacing: 3.2px
+  a
+    color: #FFF
+    padding: 10px
+    float: left
+    background: !main_color
+    margin: 0 0 15px 0
+    +rounded
+  a:hover
+    color: #FFF
+  span
+    font-size: 60%
+    color: #FFF
+    display: block
+
 h2
   margin: 0 0 10px 0
   
 p
   margin: 3px 0 5px
   
-  
+
+h2, h3, span
+  color: !main_color
+a
+  color: !main_color2
+a:hover
+  color: !main_color
+
+section
+  article
+    h3
+      margin: 0 0 10px 0 
+    margin: 15px 0 30px
+
+.box, nav a
+  background: !main_color
+
 .box
   color: !text_color2
   padding: 2px 9px
@@ -60,16 +106,33 @@ ul span
   color: #333
   font-size: 0.9em
   font-weight: normal
-
-.themes
-  float: right
-  text-align: center
-  background: #DDD
-  padding: 8px
-  margin: 35px 0 0 0
-  +rounded
-  .red 
-    background: #F00
-  .blue
-    background: #00F
   
+.right
+  float: right
+
+.home
+  .libraries
+    img
+      width: 100%
+    ul
+      margin: 25px 0 0 0 
+      text-align: center
+    li 
+      display: inline-block
+      width: 20%
+      margin: 0 4% 0 0
+      max-width: 120px
+    a:hover
+      +simplest_button
+      
+  .features
+    ul
+      font-size: 1.1em
+      list-style-type: disc
+      margin: 0 0 0 22px
+    .images img
+      width: 30%
+      margin: 0 2% 0 0
+      display: inline-block
+    .images img:hover
+      +simplest_button
