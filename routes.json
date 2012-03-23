@@ -1,6 +1,7 @@
 {
-  "/":          "index",
-  "/page1":     "page1",
-  "/page2":     "page2.php",
-  "/pages/*":   "page"
+  "/":            "index",
+  "/guide":       "guide",
+  "/demo":        "demo",
+  "/sites":       "sites",
+  "/*":           "index"
 }
