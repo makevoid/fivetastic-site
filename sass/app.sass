@@ -16,9 +16,6 @@
   border-radius: 0 0 10px 10px
 
 +simplest_button
-  position: relative
-  left: 1px
-  top: 1px
   cursor: pointer
 
 body
@@ -136,3 +133,15 @@ ul span
       display: inline-block
     .images img:hover
       +simplest_button
+
+
+#overlay
+  position: absolute
+  width: 100%
+  display: none
+  background: rgba(150, 150, 150, 0.6)
+  img
+    position: relative
+    width: 70%
+    left: 15%
+    margin: auto
